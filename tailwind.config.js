@@ -3,8 +3,10 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}", // existing target inside src
     "./public/**/*.{html,js}", // new target in public
-    "./*.{html,js}" // target files at the root level
+    "./*.{html,js}", // target files at the root level
+    "./*.html"
   ],
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       fontFamily: {
