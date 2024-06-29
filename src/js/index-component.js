@@ -1,18 +1,18 @@
 
-const sections = ['faq', 'hero', 'growth', 'build', 'statement', 'partners', 'waitlist'];
+const sections = ['faq', 'hero', 'growth', 'build', 'statement', 'partners'];
 
 document.addEventListener("DOMContentLoaded", function() {
-//   const loadSectionPromises = sections.map(section => {
-//       return fetch(`./src/constants/index/${section}.html`)
-//           .then(response => response.text())
-//           .then(data => {
-//               const placeholder = document.getElementById(`${section}-placeholder`);
-//               if (placeholder) {
-//                   placeholder.innerHTML = data;
-//               }
-//           })
-//           .catch(error => console.error('Error loading section:', section, error));
-//   });
+  const loadSectionPromises = sections.map(section => {
+      return fetch(`./src/constants/index/${section}.html`)
+          .then(response => response.text())
+          .then(data => {
+              const placeholder = document.getElementById(`${section}-placeholder`);
+              if (placeholder) {
+                  placeholder.innerHTML = data;
+              }
+          })
+          .catch(error => console.error('Error loading section:', section, error));
+  });
 
   // Once all sections are loaded, add event listeners to .question elements
   Promise.all(loadSectionPromises).then(() => {

@@ -17,7 +17,7 @@
 </head>
 <body class="bg-gray-100">
   
-  <div id="header-placeholder">
+  <div id="header">
     <header class="bg-white">
       <nav class="py-3 px-4 tablet:px-6 laptop:px-8 w-full max-w-[1150px] mx-auto flex justify-between items-center">
         <a href="/"><img src="./src/asset/Logo.png" alt="Flourish Logo" class="w-[77px] h-[37px]"></a>
@@ -28,273 +28,36 @@
           <a class="link px-3 py-2 rounded-lg hover:bg-grey-1 text-16 font-medium" href="about.html">About</a>
         </div>
         <!-- Mobile Navbar -->
-         <img src="./src/asset/icons.png" alt="Hamburger Icon" class="w-6 h-6 laptop:hidden">
-        <div class="w-fit hidden">
-          <a class="link px-3 py-2 rounded-lg hover:bg-grey-1 text-16 font-medium" href="services.html">Services</a>
-          <a class="link px-3 py-2 rounded-lg hover:bg-grey-1 text-16 font-medium" href="partnership.html">Partnerships</a>
-          <a class="link px-3 py-2 rounded-lg hover:bg-grey-1 text-16 font-medium" href="blog.html">Blog</a>
-          <a class="link px-3 py-2 rounded-lg hover:bg-grey-1 text-16 font-medium" href="about.html">About</a>
+         <img src="./src/asset/icons.png" alt="Hamburger Icon" id="dropdown" class="dropdown w-6 h-6 laptop:hidden">
+        <div class="hidden display_toggle bg-white w-full h-[100vh] fixed top-[60px] left-0 flex-col p-6" id="links">
+          <a class="link px-3 py-2 mb-3 rounded-lg hover:bg-grey-1 text-16 font-medium w-fit" href="services.html">Services</a>
+          <a class="link px-3 py-2 mb-3 rounded-lg hover:bg-grey-1 text-16 font-medium w-fit" href="partnership.html">Partnerships</a>
+          <a class="link px-3 py-2 mb-3 rounded-lg hover:bg-grey-1 text-16 font-medium w-fit" href="blog.html">Blog</a>
+          <a class="link px-3 py-2 mb-3 rounded-lg hover:bg-grey-1 text-16 font-medium w-fit" href="about.html">About</a>
         </div>
       </nav>
     </header>
   </div>
 
-  <div id="hero-placeholder" >
-    <div class="bg-grey-9">
-      <div
-        class="w-full max-w-[1440px] mx-auto bg-right-bottom-1 bg-mobile tablet:bg-tablet laptop:bg-laptop desktop:bg-desktop bg-no-repeat bg-dark-right px-4 py-20 tablet:px-6 laptop:px-9 laptop:py-25">
-        <div class="w-full max-w-[955px] mx-auto">
-          <p class="text-24 tablet:text-40 laptop:text-80 text-white font-crimson">We bring CFO/COO Services
-            to Emerging Managers in
-            Venture Capital </p>
-          <p
-            class="font-inter mt-6 latop:mt-8 w-full max-w-[759px] mx-auto text-16 tablet:text-20 laptop:text-24 text-white">
-            We specialise in guiding Emerging Managers in Venture Capital through the intricacies of establishing and
-            growing their first funds—from inception through Funds I, II, III, IV, and beyond.</p>
-          <div class="w-full max-w-[759px] mx-auto mt-10 laptop:mt-[50px]">
-            <a href="#"
-              class=" w-[204px] font-inter flex justify-center items-center font-medium bg-gold-5 text-grey-9 text-16 py-3 px-4 ">Get
-              in Touch</a>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  </div>
+  <div id="hero-placeholder"> </div>
 
-  <div id="faq-placeholder" >
-    <div
-    class="bg-grey-0">
- <div class="w-full max-w-[1440px] mx-auto  bg-left bg-mobile tablet:bg-tablet laptop:bg-laptop desktop:bg-desktop bg-no-repeat bg-light-left px-4 py-20 tablet:px-6 laptop:px-9 laptop:py-25">
-    <div class="w-full max-w-[1152px] mx-auto text-grey-8">
-        <div class="w-full max-w-[955px] text-20 tablet:text-32 laptop:text-40 pb-6 tablet:pb-8 laptop:pb-20">
-            <p class="font-crimson">As your CFO/COO, you will benefit from the expertise of a dedicated operating
-                partner with extensive domain expertise in managing the complexities of venture capital fund operations.
-            </p>
-            <p class="font-crimson mt-6 tablet:mt-10">Our seasoned executive, with two decades of experience —including leading the
-                operations of EMEAs leading venture capital fund —will integrate seamlessly with your team. We ensure an
-                immediate positive impact on your finance and operations, helping elevate your business to the next
-                level.</p>
-        </div>
-        <div class="w-full border-t border-t-grey-3">
-            <div class="py-[50px] border-b border-b-grey-3">
-                <p
-                    class="question text-24 mb-2 font-bold text-grey-8 tablet:text-40 tablet:font-semibold flex justify-between items-center cursor-pointer">
-                    Fund Setup
-                    <span
-                        class="arrow flex justify-center items-center rounded-full bg-grey-9 text-white w-12 h-12 hover:bg-gold-5">-</span>
-                </p>
-                <div class="hidden w-[90%]">
-                    <p class="grey-6 text-16 tablet:text-20">We work with you to develop strategies for domiciliation
-                        and effective GP formation. By collaborating with top providers and leveraging advanced
-                        technology, we create a solid foundation for all your operations. This ensures a seamless
-                        structure not just for Fund I, but also for Funds II, III, IV, and beyond.</p>
-                </div>
-            </div>
-            <div class="py-[50px] border-b border-b-grey-3">
-                <p
-                    class="question text-24 mb-2 font-bold text-grey-8 tablet:text-40 tablet:font-semibold flex justify-between items-center cursor-pointer">
-                    Regulatory Compliance
-                    <span
-                        class="arrow flex justify-center items-center rounded-full bg-grey-9 text-white w-12 h-12 hover:bg-gold-5">-</span>
-                </p>
-                <div class="hidden w-[90%]">
-                    <p class="grey-6 text-16 tablet:text-20">We collaborate with compliance experts to provide robust
-                        oversight, navigate the complexities of regulatory requirements, and ensure full compliance with
-                        local and international laws. Our proactive risk management keeps your fund compliant,
-                        transparent, and secure.</p>
-                </div>
-            </div>
-            <div class="py-[50px] border-b border-b-grey-3">
-                <p
-                    class="question text-24 mb-2 font-bold text-grey-8 tablet:text-40 tablet:font-semibold flex justify-between items-center cursor-pointer">
-                    Investor Reporting
-                    <span
-                        class="arrow flex justify-center items-center rounded-full bg-grey-9 text-white w-12 h-12 hover:bg-gold-5">-</span>
-                </p>
-                <div class="hidden w-[90%]">
-                    <p class="grey-6 text-16 tablet:text-20">By working closely with administrators and building strong
-                        relationships, we ensure best-in-class delivery of timely and detailed investor reports,
-                        building trust with your investors. We develop comprehensive storytelling to provide insights
-                        into fund performance and strategy making your fund standout from the crowd.</p>
-                </div>
-            </div>
-            <div class="py-[50px] border-b border-b-grey-3">
-                <p
-                    class="question text-24 mb-2 font-bold text-grey-8 tablet:text-40 tablet:font-semibold flex justify-between items-center cursor-pointer">
-                    Strategic Planning
-                    <span
-                        class="arrow flex justify-center items-center rounded-full bg-grey-9 text-white w-12 h-12 hover:bg-gold-5">-</span>
-                </p>
-                <div class="hidden w-[90%]">
-                    <p class="grey-6 text-16 tablet:text-20">We collaborate with compliance experts to provide robust
-                        oversight, navigate the complexities of regulatory requirements, and ensure full compliance with
-                        local and international laws. Our proactive risk management keeps your fund compliant,
-                        transparent, and secure.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-</div> 
-  </div>
+  <div id="faq-placeholder"></div>
 
-  <div id="growth-placeholder" >
-    <div class="bg-white">
-      <div
-        class="w-full max-w-[1440px] mx-auto  bg-right bg-mobile tablet:bg-tablet laptop:bg-laptop desktop:bg-desktop bg-no-repeat bg-light-right px-4 py-20 tablet:px-6 laptop:px-9 laptop:py-25">
-        <div class="w-full max-w-[955px] mx-auto">
-          <p class="text-24 tablet:text-40 laptop:text-80 text-grey-8 font-semibold font-crimson">Advisor & Catalyst For
-            Your Business Growth</p>
-    
-          <div
-            class="w-full laptop:grid laptop:grid-cols-2 text-left gap-6 laptop:gap-10 mt-20 tablet:mt-[50px] laptop-mt-20">
-            <div class="">
-              <img src="./src/asset/financial.svg" alt="financial modeling"
-                class=" mb-10 p-[10] tablet:p-5 w-25 h-25 tablet:w-[172px] tablet:h-[172px]">
-              <p class="text-24 font-bold tablet:text-40 tablet:font-semibold text-grey-8">Financial Modeling</p>
-              <p class="text-16 text-grey-6 tablet:text-24">Forecasting, scenario planning, KPIs.</p>
-            </div>
-            <div class="">
-              <img src="./src/asset/strategic.svg" alt="Strategic Guidance"
-                class=" mb-10 p-[10] tablet:p-5 w-25 h-25 tablet:w-[172px] tablet:h-[172px]">
-              <p class="text-24 font-bold tablet:text-40 tablet:font-semibold text-grey-8">Strategic Guidance</p>
-              <p class="text-16 text-grey-6 tablet:text-24">Mission alignment, personal goals.</p>
-            </div>
-            <div class="">
-              <img src="./src/asset/fundraising.svg" alt="Fundraising Support"
-                class=" mb-10 p-[10] tablet:p-5 w-25 h-25 tablet:w-[172px] tablet:h-[172px]">
-              <p class="text-24 font-bold tablet:text-40 tablet:font-semibold text-grey-8">Fundraising Support</p>
-              <p class="text-16 text-grey-6 tablet:text-24">Investor materials, AUM progression.</p>
-            </div>
-            <div class="">
-              <img src="./src/asset/liquidity.svg" alt="Liquidity Management"
-                class=" mb-10 p-[10] tablet:p-5 w-25 h-25 tablet:w-[172px] tablet:h-[172px]">
-              <p class="text-24 font-bold tablet:text-40 tablet:font-semibold text-grey-8">Liquidity Management</p>
-              <p class="text-16 text-grey-6 tablet:text-24">RCF solutions, balance sheet advisory.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  </div>
+  <div id="growth-placeholder"></div>
   
-  <div id="build-placeholder" >
-    <div class="bg-gold-1">
-      <div
-        class="w-full max-w-[1440px] mx-auto  bg-left bg-mobile tablet:bg-tablet laptop:bg-laptop desktop:bg-desktop bg-no-repeat bg-light-right px-4 py-20 tablet:px-6 laptop:px-9 laptop:py-25">
-        <div class="w-full max-w-[955px] mx-auto flex flex-col gap-20">
-          <p class="text-24 tablet:text-40 laptop:text-80 text-grey-8 font-semibold font-crimson">Helping You Building Your
-            Finance Function</p>
-    
-          <div
-            class="w-full max-w-[528px] laptop:max-w-full laptop:grid laptop:grid-cols-2 laptop:items-center text-left gap-6 desktop:gap-[50px]">
-            <img src="./src/asset/bookkeeping.png" alt="Bookkeeping">
-            <div>
-              <p class="mt-6 laptop:mt-0 mb-4 font-bold text-24 text-grey-8 tablet:text-32 laptop:text-40 font-crimson">
-                Bookkeeping</p>
-              <p class="font-inter text-grey-6 text-16 tablet:text-20 laptop:text-24">Invoices, bills, payroll, basic
-                accounting. Needed from
-                day one. Keeps the lights on. Handles day-to-day transactions.</p>
-            </div>
-          </div>
-          <div
-            class="w-full max-w-[528px] laptop:max-w-full laptop:grid laptop:grid-cols-2 laptop:items-center text-left gap-6 desktop:gap-[50px] ">
-            <img src="./src/asset/accounting.png" alt="Bookkeeping">
-            <div>
-              <p class="mt-6 laptop:mt-0 mb-4 font-bold text-24 text-grey-8 tablet:text-32 laptop:text-40 font-crimson">
-                Accounting</p>
-              <p class="font-inter text-grey-6 text-16 tablet:text-20 laptop:text-24">Accrual accounting, tax compliance,
-                financial
-                statements. For ensuring all regulatory requirements are met.</p>
-            </div>
-          </div>
-          <div
-            class="w-full max-w-[528px] laptop:max-w-full laptop:grid laptop:grid-cols-2 laptop:items-center text-left gap-6 desktop:gap-[50px]">
-            <img src="./src/asset/strategic.png" alt="Bookkeeping">
-            <div>
-              <p class="mt-6 laptop:mt-0 mb-4 font-bold text-24 text-grey-8 tablet:text-32 laptop:text-40 font-crimson">
-                Strategic CFO</p>
-              <p class="font-inter text-grey-6 text-16 tablet:text-20 laptop:text-24">Forecasting/Budgeting cash management,
-                fundraising
-                support. Critical for major growth initiatives and key decisions.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-    </div>
-  </div>
+  <div id="build-placeholder"></div>
 
-  <div id="statement-placeholder" >
-    <div class="bg-grey-9 ">
-    <div
-      class="w-full max-w-[1440px] mx-auto bg-left bg-mobile tablet:bg-tablet laptop:bg-laptop desktop:bg-desktop bg-no-repeat bg-light-right px-4 py-20 tablet:px-6 laptop:px-9 laptop:py-25">
-      <div class="text-white w-full max-w-[711px] mx-auto">
-        <h2 class="font-crimson text-24 font-bold tablet:text-32 tablet:font-semibold laptop:text-40 mb-10">"From
-          understanding our ambitions, to crafting the direction, to executing with speed, Primary nailed it from the
-          beginning. We are in love with all of it."</h2>
-  
-        <h3 class="text-20 font-bold laptop:text-24">Elliott Rapaport</h3>
-        <p class="text-16 laptop:text-20">CEO, Birches Health</p>
-      </div>
-    </div>
-  
-  </div></div>
+  <div id="statement-placeholder"></div>
 
-  <div id="partners-placeholder" >
-    <div class="bg-white">
+  <div id="partners-placeholder"></div>
 
-      <div
-        class="w-full max-w-[1440px] mx-auto bg-left bg-mobile tablet:bg-tablet laptop:bg-laptop desktop:bg-desktop bg-no-repeat bg-light-right px-4 py-20 tablet:px-6 laptop:px-9 laptop:py-25">
-        <div class="text-white w-full max-w-[1103px] mx-auto flex flex-col gap-4 tablet:gap-10">
-          <p
-            class="w-full mx-auto max-[923px] tablet:w-[70%] laptop:w-full text-24 tablet:text-40 laptop:text-80 text-grey-9 font-crimson text-center mb-2 tablet:mb-0 laptop:mb-[10px]">
-            We have experience working with the best</p>
-          <div class="flex justify-between w-full mx-auto tablet:gap-[70px] tablet:w-fit laptop:w-full ">
-            <img src="./src/asset/KPMG.svg" alt="KPMG" class="w-[45px] tablet-[83px] laptop:w-[150px] desktop:w-[172px]">
-            <img src="./src/asset/ICG.svg" alt="ICG" class="w-[27px] tablet-[49px] laptop:w-[89px] desktop:w-[102px]">
-            <img src="./src/asset/ICG Enterprise Trust.svg" alt="ICG Enterprise Trust"
-              class="w-[106px] tablet-[195px] laptop:w-[355px] desktop:w-[406px]">
-            <img src="./src/asset/ANIM.svg" alt="ANIM" class="w-[41px] tablet-[74px] laptop:w-[135px] desktop:w-[154px]">
-          </div>
-          <div class="flex justify-center w-fit mx-auto gap-10 tablet:gap-[70px] desktop:gap-20">
-            <img src="./src/asset/newton.svg" alt="Newton" class="w-[41px] tablet-[74px]  desktop:w-[86px]">
-            <img src="./src/asset/local-globe.svg" alt="ICG" class="w-[140px] tablet-[254px]  desktop:w-[293px]">
-            <img src="./src/asset/image 6.svg" alt="" class="w-[28px] tablet-[52px] desktop:w-[60px]">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div id="footer-placeholder" >
-    <footer class="bg-grey-9">
-      <div class="py-[50px] px-4 tablet:px-6 laptop:px-8 laptop:px-10 w-full max-w-[1150px] mx-auto">
-          <div class="flex flex-col gap-4 laptop:flex-row laptop:justify-between laptop:items-center mb-10 laptop:mb-6">
-        <img src="./src/asset/Logo-white.png" alt="Flourish Logo" class="w-[77px] h-[37px]">
-        <div class="flex flex-col gap-4 laptop:flex-row laptop:gap-10 w-fit laptop:justify-between ">
-          <a class="px-3 py-2 rounded-lg text-white hover:bg-grey-1 text-16 font-medium" href="services.html">Services</a>
-          <a class="px-3 py-2 rounded-lg text-white hover:bg-grey-1 text-16 font-medium" href="partnership.html">Partnerships</a>
-          <a class="px-3 py-2 rounded-lg text-white hover:bg-grey-1 text-16 font-medium" href="blog.html">Blog</a>
-          <a class="px-3 py-2 rounded-lg text-white hover:bg-grey-1 text-16 font-medium" href="about.html">About</a>
-        </div>
-        </div>
-        <div class="flex flex-col gap-2 text-white font-normal">
-          <a href="mail-to:rebekah@flourishpartners.co" class="py-2">rebekah@flourishpartners.co</a>
-          <div class="flex gap-2 w-fit">
-              <img src="src/asset/LinkedIn.svg" alt="LinkedIn">
-              <a href="#" class="underline">Follow us on LinkedIn</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-  </div>
+  <div id="footer-placeholder"></div>
 
     <script src="src/js/component.js"> </script>
     <script src="src/js/index-component.js"> </script>
     
-  
+    <script>
+   
+    </script>
 </body>
 </html>
