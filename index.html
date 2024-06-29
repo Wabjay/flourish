@@ -5,18 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
   <title>Flourish Partners</title>
-  <style>
-    .card:hover{
-background-color: #191820;
-  }
-  .card:hover > p{
-    background-color: #BD9957;
-    color: white;
-      }
-      .card:hover > div *{
-        color: white;
-          }
-  </style>
 </head>
 <body class="bg-gray-100">
   
@@ -39,28 +27,6 @@ background-color: #191820;
     <script src="./src/js/component.js"> </script>
     <script src="./src/js/index-component.js"> </script>
     
-    <script>
-   
-// update the active link
-function activateLinkByURL() {
-  const currentPageURL = new URL(window.location.href).pathname; // Get pathname (without parameters)
-
-  // Find all header links
-  const headerLinks = document.querySelectorAll(".link"); // Replace ".header-link" with your actual selector
-
-  // Loop through header links
-  headerLinks.forEach(link => {
-    const linkURL = new URL(link.getAttribute("href")).pathname; // Get pathname from link href
-console.log(currentPageURL, linkURL)
-    if (currentPageURL === linkURL) {
-      link.classList.add("bg-grey-1"); // Add "active" class to the matching link
-    } else {
-      link.classList.remove("bg-grey-1"); // Remove "active" class from non-matching links (optional)
-    }
-  });
-}
-
-activateLinkByURL();
-</script>
+  
 </body>
 </html>
