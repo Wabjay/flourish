@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="output.css" rel="stylesheet">
+  <title>Flourish Partners</title>
+  <style>
+    .card:hover{
+background-color: #191820;
+  }
+  .card:hover > p{
+    background-color: #BD9957;
+    color: white;
+      }
+      .card:hover > div *{
+        color: white;
+          }
+  </style>
+</head>
+<body class="bg-gray-100">
+  
+  <div id="header-placeholder"></div>
+
+  <div id="hero-placeholder" ></div>
+
+  <div id="faq-placeholder" ></div>
+
+  <div id="growth-placeholder" ></div>
+  
+  <div id="build-placeholder" ></div>
+
+  <div id="statement-placeholder" ></div>
+
+  <div id="partners-placeholder" ></div>
+
+  <div id="footer-placeholder" ></div>
+
+    <script src="./src/js/component.js" type="module"> </script>
+    <script src="./src/js/index-component.js" type="module"> </script>
+    
+    <script>
+   
+// update the active link
+function activateLinkByURL() {
+  const currentPageURL = new URL(window.location.href).pathname; // Get pathname (without parameters)
+
+  // Find all header links
+  const headerLinks = document.querySelectorAll(".link"); // Replace ".header-link" with your actual selector
+
+  // Loop through header links
+  headerLinks.forEach(link => {
+    const linkURL = new URL(link.getAttribute("href")).pathname; // Get pathname from link href
+console.log(currentPageURL, linkURL)
+    if (currentPageURL === linkURL) {
+      link.classList.add("bg-grey-1"); // Add "active" class to the matching link
+    } else {
+      link.classList.remove("bg-grey-1"); // Remove "active" class from non-matching links (optional)
+    }
+  });
+}
+
+activateLinkByURL();
+</script>
+</body>
+</html>
