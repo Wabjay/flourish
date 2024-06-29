@@ -1,4 +1,3 @@
-//  // NAVBAR DROPDOWN
 // var grid = document.querySelector(".grid");
 // var display_toggle = document.querySelector(".display_toggle");
 // grid.addEventListener("click", function () {

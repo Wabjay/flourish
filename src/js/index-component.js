@@ -1,5 +1,3 @@
-//  // NAVBAR DROPDOWN
-
 
   // JavaScript to load faq content
   document.addEventListener("DOMContentLoaded", function() {
