@@ -22,10 +22,13 @@ document.addEventListener("DOMContentLoaded", function() {
               const arrow = item.querySelector('.arrow');
               if (answer.style.display === 'block') {
                   answer.style.display = 'none';
-                  arrow.classList.remove('rotate');
+                  arrow.classList.remove('bggold');
+                  arrow.innerHTML = "-";
+
               } else {
                   answer.style.display = 'block';
-                  arrow.classList.add('rotate');
+                  arrow.classList.add('bggold');
+                  arrow.innerHTML = "+";
               }
           });
       });

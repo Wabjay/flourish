@@ -4,12 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="output.css" rel="stylesheet">
-  <title>Flourish Partners</title>
+  <title>Flourish Partners || About</title>
+  <meta name="description" content="A concise description of your webpage content">
+  <meta name="keywords" content="keyword1, keyword2, keyword3">  <meta name="robots" content="index, follow">  <meta name="author" content="Your Name or Company Name">  <meta property="og:url" content="https://www.yourwebsite.com/your-page">
+  <meta property="og:title" content="Flourish Partners || About">
+  <meta property="og:description" content="A concise description for Open Graph">
+  <meta property="og:image" content="https://www.flourishpartners.co/src/asset/Logo.png">
+  <meta property="og:type" content="website">  <meta property="og:site_name" content="Flourish Partners">  <meta name="twitter:card" content="summary">  <meta name="twitter:site" content="@your_twitter_handle">
+  <meta name="twitter:title" content="Flourish Partners || About">
+  <meta name="twitter:description" content="A concise description for Twitter Card">
+  <meta name="twitter:image" content="https://www.flourishpartners.co/src/asset/Logo.png"> 
+  <link rel="icon" src="/favicon.png" type="image/x-icon">  
+  <link rel="icon" src="/favicon.png" sizes="16x16" type="image/png">  
+  <link rel="icon" src="/favicon.png" sizes="32x32" type="image/png"> 
 </head>
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-inter">
   <div id="header">
     <header class="bg-white w-full fixed top-0 ">
-      <nav class="py-3 px-4 tablet:px-6 laptop:px-8 w-full max-w-[1150px] mx-auto flex justify-between items-center ">
+      <nav class="py-3 px-4 tablet:px-6 laptop:px-8 desktop:px-0 w-full max-w-[1150px] mx-auto flex justify-between items-center ">
         <a href="/"><img src="./src/asset/Logo.png" alt="Flourish Logo" class="w-[77px] h-[37px]"></a>
         <div class="hidden laptop:gap-10 w-fit laptop:flex laptop:justify-between ">
           <a class="link px-3 py-2 rounded-lg hover:bg-grey-1 text-16 font-medium" href="services.html">Services</a>
@@ -29,7 +41,7 @@
     </header>
   </div>
 
-  <div id="hero-placeholder" ></div>
+  <div id="hero-placeholder" class="mt-[62px]"></div>
 
   <div id="experience-placeholder" ></div>
 
@@ -40,7 +52,7 @@
   <div id="waitlist">
     <div class="bg-grey-9">
       <div
-        class="w-full max-w-[1440px] mx-auto bg-left bg-mobile tablet:bg-tablet laptop:bg-laptop desktop:bg-desktop bg-no-repeat bg-light-left">
+        class="w-full max-w-[1440px] mx-auto">
         <div class="w-full max-w-[1152px] mx-auto text-grey-8">
           <div class="w-full mx-auto max-w-[1151px] text-center bg-grey-9  px-4 py-20 tablet:px-6 laptop:px-9 laptop:py-25">
             <p class="text-24 tablet:text-40 laptop:text-80 text-white font-crimson">Lots of exciting updates</p>
@@ -63,6 +75,20 @@
   </div>
 
   <div id="footer-placeholder" ></div>
+
+  <!-- POPUP -->
+  <div id="popup"
+  class="hidden bg-overlay fixed top-0 left-0 w-full h-[100vh] justify-center items-center">
+ <div class="w-[80%] mx-auto max-w-[955px] text-center bg-gold-1 px-4 py-20 tablet:px-6 laptop:px-9 laptop:py-25">
+  <p class="text-24 tablet:text-40 laptop:text-80 text-black font-crimson font-bold">Subscription confirmed!</p>
+  <p class="font-inter mt-6 latop:mt-8 w-full max-w-[759px] mx-auto text-16 tablet:text-20 laptop:text-24 text-black">Thanks for signing up and joining our email list, goot to have you here.</p>
+  <div class="w-full max-w-[204px] mx-auto mt-6 tablet:mt-10">
+    <button id="close"
+      class="font-inter flex justify-center items-center font-medium bg-gold-5 text-white text-16 py-3 px-4 ">Back to homepage</button>
+  </div> 
+</div>
+</div>
+  <!-- POPUP END -->
 
     <script src="./src/js/component.js"> </script>
     <script src="./src/js/about-component.js"> </script>

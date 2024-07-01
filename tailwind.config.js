@@ -20,12 +20,16 @@ module.exports = {
         'dark-right': "url('./src/asset/flower-dark-right.png')",
         'light-left-right': "url('./src/asset/flower-light-left.png'), url('./src/asset/flower-light-right.png')",
         'dark-left-right': "url('./src/asset/flower-dark-left.png'), url('./src/asset/flower-dark-right.png')",
+        'light-left-dark-right': "url('./src/asset/flower-light-left.png'), url('./src/asset/flower-dark-right.png')",
+        'overlay': 'var(--Overlay-color, linear-gradient(180deg, rgba(1, 26, 39, 0.48) 4.69%, rgba(1, 26, 39, 0.45) 56.25%, rgba(1, 26, 39, 0.47) 100%))'
       },
       backgroundPosition: {
         'right-bottom-1': 'right bottom -40px',
-        'left-right': 'top 20% left, bottom right',
+        'leftTop-right': 'top left, right',
         'left-bottom-100': 'left bottom 100px',
-        'left-bottom': 'left bottom'
+        'left-bottom': 'left bottom',
+        'right-bottom': 'right bottom',
+        'left-rightBottom': 'left, right bottom'
       },
       backgroundSize: {
         'mobile': '220px',
