@@ -10,3 +10,25 @@
 html {
     scroll-behavior: smooth;
   }
+
+  .custom-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .custom-list li {
+    position: relative;
+    padding-left: 24px; /* Adjust based on your image size */
+  }
+  
+  .custom-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 16px; /* Adjust based on your image size */
+    height: 16px; /* Adjust based on your image size */
+    background-image: url('/favicon.png'); /* Replace with your image URL */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
