@@ -28,10 +28,10 @@ html {
     top: 4px;
     width: 32px; /* Adjust based on your image size */
     height: 32px; /* Adjust based on your image size */
-    background-image: url('/src/asset/list-black.png'); /* Replace with your image URL */
+    background-image: url('list-black.png'); /* Replace with your image URL */
     background-size: cover;
     background-repeat: no-repeat;
   }
   .custom-list-black li::before{
-    background-image: url('/src/asset/list-white.png'); 
+    background-image: url('list-white.png'); 
   }
