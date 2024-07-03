@@ -25,13 +25,13 @@ html {
     content: "";
     position: absolute;
     left: 0;
-    top: 4px;
+    top: 0px;
     width: 32px; /* Adjust based on your image size */
     height: 32px; /* Adjust based on your image size */
-    background-image: url('list-black.png'); /* Replace with your image URL */
+    background-image: url('list-black.svg'); /* Replace with your image URL */
     background-size: cover;
     background-repeat: no-repeat;
   }
   .custom-list-black li::before{
-    background-image: url('list-white.png'); 
+    background-image: url('list-white.svg'); 
   }
