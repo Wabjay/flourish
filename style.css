@@ -11,24 +11,27 @@ html {
     scroll-behavior: smooth;
   }
 
-  .custom-list {
+  .custom-list, .custom-list-black {
     list-style: none;
     padding-left: 0;
   }
   
-  .custom-list li {
+  .custom-list li, .custom-list-black li {
     position: relative;
     padding-left: 24px; /* Adjust based on your image size */
   }
   
-  .custom-list li::before {
+  .custom-list li::before, .custom-list-black li::before {
     content: "";
     position: absolute;
     left: 0;
     top: 4px;
     width: 16px; /* Adjust based on your image size */
     height: 16px; /* Adjust based on your image size */
-    background-image: url('/favicon.png'); /* Replace with your image URL */
+    background-image: url('/src/asset/list-black.png'); /* Replace with your image URL */
     background-size: cover;
     background-repeat: no-repeat;
+  }
+  .custom-list-black li::before{
+    background-image: url('/src/asset/list-white.png'); 
   }

@@ -1276,6 +1276,10 @@ html {
     margin-top: 50px;
   }
 
+  .laptop\:mt-8{
+    margin-top: 2rem;
+  }
+
   .laptop\:flex{
     display: flex;
   }
