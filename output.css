@@ -1071,6 +1071,14 @@ html {
   --tw-bg-opacity: 1;
   background-color: rgb(25 24 32 / var(--tw-bg-opacity));
 }
+  .hover\:bg-black-light:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 1 2 / var(--tw-bg-opacity));
+}
+  .hover\:bg-gold-light:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(173 138 74 / var(--tw-bg-opacity));
+}
   .hover\:text-grey-9:hover{
   --tw-text-opacity: 1;
   color: rgb(9 9 12 / var(--tw-text-opacity));

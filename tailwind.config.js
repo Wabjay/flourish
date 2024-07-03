@@ -53,7 +53,8 @@ module.exports = {
       "white": "#FFFFfF",
       "gold-1": "#F8F3ED",
       "gold-5": "#BD9957",
-
+      "gold-light": "#AD8A4A",
+      "black-light": "#010102"
     },
     fontSize: {
       "12": [
