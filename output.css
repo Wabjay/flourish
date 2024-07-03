@@ -542,6 +542,9 @@ video {
 .top-\[60px\]{
   top: 60px;
 }
+.z-20{
+  z-index: 20;
+}
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -718,23 +721,17 @@ video {
 .max-w-\[759px\]{
   max-width: 759px;
 }
-.max-w-\[763px\]{
-  max-width: 763px;
-}
 .max-w-\[865px\]{
   max-width: 865px;
 }
 .max-w-\[955px\]{
   max-width: 955px;
 }
-.max-w-\[99px\]{
-  max-width: 99px;
+.max-w-\[975px\]{
+  max-width: 975px;
 }
 .max-w-\[905px\]{
   max-width: 905px;
-}
-.max-w-\[975px\]{
-  max-width: 975px;
 }
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -962,9 +959,6 @@ video {
 .pt-20{
   padding-top: 5rem;
 }
-.pb-10{
-  padding-bottom: 2.5rem;
-}
 .text-left{
   text-align: left;
 }
@@ -1041,48 +1035,46 @@ html {
     scroll-behavior: smooth;
   }
 
-  .custom-list {
+  .custom-list, .custom-list-black {
     list-style: none;
     padding-left: 0;
   }
   
-  .custom-list li {
+  .custom-list li, .custom-list-black li {
     position: relative;
-    padding-left: 24px; /* Adjust based on your image size */
+    padding-left: 36px; /* Adjust based on your image size */
   }
   
-  .custom-list li::before {
+  .custom-list li::before, .custom-list-black li::before {
     content: "";
     position: absolute;
     left: 0;
     top: 4px;
-    width: 16px; /* Adjust based on your image size */
-    height: 16px; /* Adjust based on your image size */
-    background-image: url('/favicon.png'); /* Replace with your image URL */
+    width: 32px; /* Adjust based on your image size */
+    height: 32px; /* Adjust based on your image size */
+    background-image: url('/src/asset/list-black.png'); /* Replace with your image URL */
     background-size: cover;
     background-repeat: no-repeat;
   }
-  
+  .custom-list-black li::before{
+    background-image: url('/src/asset/list-white.png'); 
+  }
   .hover\:bg-gold-5:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(189 153 87 / var(--tw-bg-opacity));
 }
-  
   .hover\:bg-grey-1:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(236 236 242 / var(--tw-bg-opacity));
 }
-  
   .hover\:bg-grey-8:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(25 24 32 / var(--tw-bg-opacity));
 }
-  
   .hover\:text-grey-9:hover{
   --tw-text-opacity: 1;
   color: rgb(9 9 12 / var(--tw-text-opacity));
 }
-  
   @media (min-width: 576px){
 
   .tablet\:mb-0{
@@ -1217,10 +1209,6 @@ html {
     padding-left: 2rem;
   }
 
-  .tablet\:pb-20{
-    padding-bottom: 5rem;
-  }
-
   .tablet\:text-20{
     font-size: 20px;
     line-height: 32px;
@@ -1245,7 +1233,6 @@ html {
     letter-spacing: -1px;
   }
 }
-  
   @media (min-width: 1024px){
 
   .laptop\:mb-0{
@@ -1268,16 +1255,16 @@ html {
     margin-top: 5rem;
   }
 
+  .laptop\:mt-8{
+    margin-top: 2rem;
+  }
+
   .laptop\:mt-\[-100px\]{
     margin-top: -100px;
   }
 
   .laptop\:mt-\[50px\]{
     margin-top: 50px;
-  }
-
-  .laptop\:mt-8{
-    margin-top: 2rem;
   }
 
   .laptop\:flex{
@@ -1312,6 +1299,10 @@ html {
     width: 465px;
   }
 
+  .laptop\:w-\[70\%\]{
+    width: 70%;
+  }
+
   .laptop\:w-\[80\%\]{
     width: 80%;
   }
@@ -1327,26 +1318,6 @@ html {
 
   .laptop\:w-full{
     width: 100%;
-  }
-
-  .laptop\:w-7{
-    width: 1.75rem;
-  }
-
-  .laptop\:w-\[70p\]{
-    width: 70p;
-  }
-
-  .laptop\:w-\[70px\]{
-    width: 70px;
-  }
-
-  .laptop\:w-\[70\]{
-    width: 70;
-  }
-
-  .laptop\:w-\[70\%\]{
-    width: 70%;
   }
 
   .laptop\:max-w-\[80\%\]{
@@ -1488,7 +1459,6 @@ html {
     letter-spacing: -2px;
   }
 }
-  
   @media (min-width: 1280px){
 
   .desktop\:mb-0{
@@ -1523,6 +1493,10 @@ html {
     width: 406px;
   }
 
+  .desktop\:w-\[60\%\]{
+    width: 60%;
+  }
+
   .desktop\:w-\[60px\]{
     width: 60px;
   }
@@ -1535,12 +1509,16 @@ html {
     width: 90%;
   }
 
-  .desktop\:w-\[60p\]{
-    width: 60p;
+  .desktop\:max-w-\[80\%\]{
+    max-width: 80%;
   }
 
-  .desktop\:w-\[60\%\]{
-    width: 60%;
+  .desktop\:max-w-\[0\%\]{
+    max-width: 0%;
+  }
+
+  .desktop\:max-w-\[90\%\]{
+    max-width: 90%;
   }
 
   .desktop\:grid-cols-\[166px_362px_auto\]{

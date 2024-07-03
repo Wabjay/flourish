@@ -18,7 +18,7 @@ html {
   
   .custom-list li, .custom-list-black li {
     position: relative;
-    padding-left: 24px; /* Adjust based on your image size */
+    padding-left: 36px; /* Adjust based on your image size */
   }
   
   .custom-list li::before, .custom-list-black li::before {
@@ -26,8 +26,8 @@ html {
     position: absolute;
     left: 0;
     top: 4px;
-    width: 16px; /* Adjust based on your image size */
-    height: 16px; /* Adjust based on your image size */
+    width: 32px; /* Adjust based on your image size */
+    height: 32px; /* Adjust based on your image size */
     background-image: url('/src/asset/list-black.png'); /* Replace with your image URL */
     background-size: cover;
     background-repeat: no-repeat;
