@@ -985,6 +985,11 @@ video {
   line-height: 36px;
   letter-spacing: -0.48px;
 }
+.text-32{
+  font-size: 32px;
+  line-height: 39px;
+  letter-spacing: -1px;
+}
 .font-medium{
   font-weight: 500;
 }
@@ -1059,9 +1064,17 @@ html {
   .custom-list-black li::before{
     background-image: url('list-white.svg'); 
   }
+  .hover\:bg-black-light:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(1 1 2 / var(--tw-bg-opacity));
+}
   .hover\:bg-gold-5:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(189 153 87 / var(--tw-bg-opacity));
+}
+  .hover\:bg-gold-light:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(173 138 74 / var(--tw-bg-opacity));
 }
   .hover\:bg-grey-1:hover{
   --tw-bg-opacity: 1;
@@ -1070,14 +1083,6 @@ html {
   .hover\:bg-grey-8:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(25 24 32 / var(--tw-bg-opacity));
-}
-  .hover\:bg-black-light:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(1 1 2 / var(--tw-bg-opacity));
-}
-  .hover\:bg-gold-light:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(173 138 74 / var(--tw-bg-opacity));
 }
   .hover\:text-grey-9:hover{
   --tw-text-opacity: 1;
