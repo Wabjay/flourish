@@ -1,5 +1,5 @@
 //  // NAVBAR DROPDOWN
-const sections = ['hero', 'cards', 'service', 'service-dark', 'engagement', 'process', 'waitlist'];
+const sections = ['hero', 'cards', 'service', 'service-dark', 'operator', 'engagement', 'process', 'waitlist'];
 
 document.addEventListener("DOMContentLoaded", function() {
     sections.forEach(section => {

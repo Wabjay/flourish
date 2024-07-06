@@ -985,11 +985,6 @@ video {
   line-height: 36px;
   letter-spacing: -0.48px;
 }
-.text-32{
-  font-size: 32px;
-  line-height: 39px;
-  letter-spacing: -1px;
-}
 .font-medium{
   font-weight: 500;
 }
@@ -1318,6 +1313,10 @@ html {
 
   .laptop\:w-\[80\%\]{
     width: 80%;
+  }
+
+  .laptop\:w-\[85\%\]{
+    width: 85%;
   }
 
   .laptop\:w-\[89px\]{
