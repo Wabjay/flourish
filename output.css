@@ -585,9 +585,6 @@ video {
 .mt-6{
   margin-top: 1.5rem;
 }
-.mt-8{
-  margin-top: 2rem;
-}
 .mt-\[-100px\]{
   margin-top: -100px;
 }
@@ -873,6 +870,9 @@ video {
 .bg-light-left-dark-right{
   background-image: url('./src/asset/flower-light-left.png'), url('./src/asset/flower-dark-right.png');
 }
+.bg-light-left-right-left{
+  background-image: url('./src/asset/flower-light-left.png'), url('./src/asset/flower-light-right.png'), url('./src/asset/flower-light-left.png');
+}
 .bg-light-right{
   background-image: url('./src/asset/flower-light-right.png');
 }
@@ -893,6 +893,9 @@ video {
 }
 .bg-left-rightBottom{
   background-position: left, right bottom;
+}
+.bg-left-rightMiddle-leftBottom{
+  background-position: left top, right, left bottom;
 }
 .bg-leftTop-right{
   background-position: top left, right;
@@ -961,6 +964,9 @@ video {
 }
 .pl-4{
   padding-left: 1rem;
+}
+.pl-6{
+  padding-left: 1.5rem;
 }
 .pt-10{
   padding-top: 2.5rem;

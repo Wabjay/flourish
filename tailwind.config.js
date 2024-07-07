@@ -19,6 +19,7 @@ module.exports = {
         'dark-left': "url('./src/asset/flower-dark-left.png')",
         'dark-right': "url('./src/asset/flower-dark-right.png')",
         'light-left-right': "url('./src/asset/flower-light-left.png'), url('./src/asset/flower-light-right.png')",
+        'light-left-right-left': "url('./src/asset/flower-light-left.png'), url('./src/asset/flower-light-right.png'), url('./src/asset/flower-light-left.png')",
         'dark-left-right': "url('./src/asset/flower-dark-left.png'), url('./src/asset/flower-dark-right.png')",
         'light-left-dark-right': "url('./src/asset/flower-light-left.png'), url('./src/asset/flower-dark-right.png')",
         'overlay': 'var(--Overlay-color, linear-gradient(180deg, rgba(1, 26, 39, 0.48) 4.69%, rgba(1, 26, 39, 0.45) 56.25%, rgba(1, 26, 39, 0.47) 100%))'
@@ -29,7 +30,8 @@ module.exports = {
         'left-bottom-100': 'left bottom 100px',
         'left-bottom': 'left bottom',
         'right-bottom': 'right bottom',
-        'left-rightBottom': 'left, right bottom'
+        'left-rightBottom': 'left, right bottom',
+        'left-rightMiddle-leftBottom': 'left top, right, left bottom'
       },
       backgroundSize: {
         'mobile': '220px',
