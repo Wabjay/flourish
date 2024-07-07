@@ -585,6 +585,9 @@ video {
 .mt-6{
   margin-top: 1.5rem;
 }
+.mt-8{
+  margin-top: 2rem;
+}
 .mt-\[-100px\]{
   margin-top: -100px;
 }
@@ -771,9 +774,6 @@ video {
 }
 .gap-\[50px\]{
   gap: 50px;
-}
-.gap-y-10{
-  row-gap: 2.5rem;
 }
 .gap-y-6{
   row-gap: 1.5rem;
