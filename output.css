@@ -772,6 +772,12 @@ video {
 .gap-\[50px\]{
   gap: 50px;
 }
+.gap-y-10{
+  row-gap: 2.5rem;
+}
+.gap-y-6{
+  row-gap: 1.5rem;
+}
 .rounded-full{
   border-radius: 9999px;
 }
@@ -956,11 +962,11 @@ video {
 .pl-4{
   padding-left: 1rem;
 }
-.pt-20{
-  padding-top: 5rem;
-}
 .pt-10{
   padding-top: 2.5rem;
+}
+.pt-20{
+  padding-top: 5rem;
 }
 .text-left{
   text-align: left;
@@ -1316,10 +1322,6 @@ html {
 
   .laptop\:w-\[80\%\]{
     width: 80%;
-  }
-
-  .laptop\:w-\[85\%\]{
-    width: 85%;
   }
 
   .laptop\:w-\[89px\]{
