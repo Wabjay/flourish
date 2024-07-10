@@ -1,19 +1,20 @@
+/*jshint esversion: 6 */
 //  // NAVBAR DROPDOWN
-const sections = ['hero', 'cards', 'service', 'service-dark', 'operator', 'engagement', 'process', 'waitlist'];
+// const sections = ['hero', 'cards', 'service', 'service-dark', 'operator', 'engagement', 'process', 'waitlist'];
 
-document.addEventListener("DOMContentLoaded", function() {
-    sections.forEach(section => {
-        fetch(`./src/constants/services/${section}.html`)
-            .then(response => response.text())
-            .then(data => {
-                const placeholder = document.getElementById(`${section}-placeholder`);
-                if (placeholder) {
-                    placeholder.innerHTML = data;
-                }
-            })
-            .catch(error => console.error('Error loading section:', section, error));
-    });
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     sections.forEach(section => {
+//         fetch(`./src/constants/services/${section}.html`)
+//             .then(response => response.text())
+//             .then(data => {
+//                 const placeholder = document.getElementById(`${section}-placeholder`);
+//                 if (placeholder) {
+//                     placeholder.innerHTML = data;
+//                 }
+//             })
+//             .catch(error => console.error('Error loading section:', section, error));
+//     });
+// });
 
 //   // JavaScript to load faq content
 //   document.addEventListener("DOMContentLoaded", function() {

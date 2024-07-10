@@ -1,3 +1,5 @@
+
+/*jshint esversion: 6 */
 //  // NAVBAR DROPDOWN
 const sections = ['hero', 'ecosystem', 'engagement'];
 

@@ -35,3 +35,19 @@ html {
   .custom-list-black li::before{
     background-image: url('list-white.svg'); 
   }
+
+  /* Transition */
+  .transition-fade {
+    opacity: 1;
+    /* transition: opacity 0.5s ease; */
+    transform: translateX(0);
+    transition: 400ms;
+    transform-origin: left;
+}
+
+.page-hidden {
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+  /* Transition */

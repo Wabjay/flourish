@@ -1,3 +1,37 @@
+/*jshint esversion: 6 */
+
+document.addEventListener("DOMContentLoaded", function() {
+  // Load footer content
+  fetch("./src/constants/footer.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+
+});
+
+
+
+$(document).ready(function() {
+  $('a').click(function(e) {
+      e.preventDefault();
+      var href = $(this).attr('href');
+      $('.transition-fade').addClass('page-hidden');
+      setTimeout(function() {
+        console.log(href);
+          window.location = href;
+      }, 400); // Delay to match transition duration
+  });
+});
+
+
+AOS.init();
+
+
+
+
+
 document.addEventListener("DOMContentLoaded", function() {
   // Select the dropdown icon and the links container
   const grid = document.querySelector("#dropdown");
@@ -14,41 +48,15 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-  // JavaScript to load header content
-//   document.addEventListener("DOMContentLoaded", function() {
-//     fetch("./src/constants/header.html")
-//         .then(response => response.text())
-//         .then(data => {
-//             document.getElementById("header-placeholder").innerHTML = data;
-//         })
-//         .catch(error => console.error('Error loading header:', error));
-        
-//   // Activate the link based on the current URL
-//   activateLinkByURL();
-// });
 
 
-document.addEventListener("DOMContentLoaded", function() {
-  // Load footer content
-  fetch("./src/constants/footer.html")
-      .then(response => response.text())
-      .then(data => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-      })
-      .catch(error => console.error('Error loading footer:', error));
-
-});
-
-
-
-const submit = document.getElementById('form')
-const popup = document.getElementById('popup')
-const close = document.getElementById('close')
-
+const submit = document.getElementById('form');
+const popup = document.getElementById('popup');
+const close = document.getElementById('close');
 
 submit.addEventListener('click', function(){
-  let email = document.getElementById('email')
-  submit.classList.add('!bg-gold-1')
+  let email = document.getElementById('email');
+  submit.classList.add('!bg-gold-1');
   // popup.classList.remove('hidden');
   //     popup.classList.add('flex');
   axios.post('https://api.airtable.com/v0/appqNvp6gfKRTbfny/emails', {
@@ -62,7 +70,7 @@ submit.addEventListener('click', function(){
     .then((resp) => {
       popup.classList.remove('hidden');
       popup.classList.add('flex');
-      email.value = ""
+      email.value = "";
       console.log(resp);
     })
     .catch(function (error) {
@@ -77,4 +85,11 @@ close.addEventListener('click', function(){
   submit.classList.remove('!bg-gold-1');
 
 }
-)
+);
+
+// const links = document.querySelectorAll('.link');
+
+// links.forEach(link => {
+//   console.log(link);
+// });
+

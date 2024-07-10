@@ -736,6 +736,49 @@ video {
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+@keyframes bounce{
+
+  0%, 100%{
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+
+  50%{
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+.animate-bounce{
+  animation: bounce 1s infinite;
+}
+@keyframes ping{
+
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+@keyframes pulse{
+
+  50%{
+    opacity: .5;
+  }
+}
+.animate-pulse{
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+@keyframes spin{
+
+  to{
+    transform: rotate(360deg);
+  }
+}
+.animate-spin{
+  animation: spin 1s linear infinite;
+}
 .cursor-pointer{
   cursor: pointer;
 }
@@ -1074,30 +1117,53 @@ html {
   .custom-list-black li::before{
     background-image: url('list-white.svg'); 
   }
+
+  /* Transition */
+  .transition-fade {
+    opacity: 1;
+    /* transition: opacity 0.5s ease; */
+    transform: translateX(0);
+    transition: 400ms;
+    transform-origin: left;
+}
+
+.page-hidden {
+    opacity: 1;
+    transform: translateX(100%);
+}
+
+  /* Transition */
+
   .hover\:bg-black-light:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(1 1 2 / var(--tw-bg-opacity));
 }
+
   .hover\:bg-gold-5:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(189 153 87 / var(--tw-bg-opacity));
 }
+
   .hover\:bg-gold-light:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(173 138 74 / var(--tw-bg-opacity));
 }
+
   .hover\:bg-grey-1:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(236 236 242 / var(--tw-bg-opacity));
 }
+
   .hover\:bg-grey-8:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(25 24 32 / var(--tw-bg-opacity));
 }
+
   .hover\:text-grey-9:hover{
   --tw-text-opacity: 1;
   color: rgb(9 9 12 / var(--tw-text-opacity));
 }
+
   @media (min-width: 576px){
 
   .tablet\:mb-0{
@@ -1256,6 +1322,7 @@ html {
     letter-spacing: -1px;
   }
 }
+
   @media (min-width: 1024px){
 
   .laptop\:mb-0{
@@ -1478,6 +1545,7 @@ html {
     letter-spacing: -2px;
   }
 }
+
   @media (min-width: 1280px){
 
   .desktop\:mb-0{
