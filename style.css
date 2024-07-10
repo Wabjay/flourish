@@ -40,14 +40,14 @@ html {
   .transition-fade {
     opacity: 1;
     /* transition: opacity 0.5s ease; */
-    transform: translateX(0);
+    transform: translateY(0);
     transition: 400ms;
-    transform-origin: left;
+    transform-origin: top;
 }
 
 .page-hidden {
     opacity: 1;
-    transform: translateX(100%);
+    transform: translateY(100%);
 }
 
   /* Transition */

@@ -13,17 +13,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-$(document).ready(function() {
-  $('a').click(function(e) {
-      e.preventDefault();
-      var href = $(this).attr('href');
-      $('.transition-fade').addClass('page-hidden');
-      setTimeout(function() {
-        console.log(href);
-          window.location = href;
-      }, 400); // Delay to match transition duration
-  });
-});
+// $(document).ready(function() {
+//   $('a').click(function(e) {
+//       e.preventDefault();
+//       var href = $(this).attr('href');
+//       $('.transition-fade').addClass('page-hidden');
+//       setTimeout(function() {
+//         console.log(href);
+//           window.location = href;
+//       }, 400); // Delay to match transition duration
+//   });
+// });
 
 
 AOS.init();
